@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+
 }
 
 android {
@@ -37,6 +38,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
 }
 
@@ -71,5 +73,13 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
 
+/*
+    // Navigation
+    def navigation_version = "1.0.0"
+    implementation "android.arch.navigation:navigation-fragment:$navigation_version"
+    implementation "android.arch.navigation:navigation-ui:$navigation_version"
+    implementation "android.arch.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "android.arch.navigation:navigation-ui-ktx:$navigation_version"
+*/
 
 }

@@ -6,5 +6,9 @@
         android:icon="@android:drawable/bottom_bar"
         android:title="Intro" />
 
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@android:drawable/bottom_bar"
+        android:title="second" />
 
 </menu>

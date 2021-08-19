@@ -10,4 +10,8 @@
         android:name="master.fake.fake.dao_practice.quote.ui.QuoteFragment"
         android:label="fragment_quote"
         tools:layout="@layout/fragment_quote" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="master.fake.fake.dao_practice.second.SecondFragment"
+        android:label="SecondFragment" />
 </navigation>

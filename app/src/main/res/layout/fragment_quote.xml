@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchMatch_"
+    android:padding="@dimen/_20sdp"
+    tools:context=".dao_practice.quote.ui.QuoteFragment">
+
+    <TextView
+        android:id="@+id/textView_"
+        style="@style/mainText_" />
+
+
+    <LinearLayout
+        style="@style/matchWrap_"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_10sdp"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText1"
+            style="@style/matchWrap_"
+            android:layout_margin="5dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:hint="Quote .."
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+            tools:ignore="Autofill" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editText2"
+            style="@style/matchWrap_"
+            android:layout_margin="5dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:hint="Author .."
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+            tools:ignore="Autofill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            style="@style/matchWrap_"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="Add" />
+    </LinearLayout>
+
+</RelativeLayout>

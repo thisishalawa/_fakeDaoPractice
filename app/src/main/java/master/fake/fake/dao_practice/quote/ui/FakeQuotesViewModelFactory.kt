@@ -2,7 +2,7 @@ package master.fake.fake.dao_practice.quote.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import master.fake.fake.dao_practice.quote.repository.QuoteRepository
+import master.fake.fake.dao_practice.quote.repository.FakeQuoteRepository
 
 
 /*
@@ -21,11 +21,11 @@ import master.fake.fake.dao_practice.quote.repository.QuoteRepository
 
 // The same repository that's needed for QuotesViewModel
 // is also passed to the factory
-class QuotesViewModelFactory(private val quoteRepository: QuoteRepository) :
+class FakeQuotesViewModelFactory(private val fakeQuoteRepository: FakeQuoteRepository) :
     ViewModelProvider.NewInstanceFactory() {
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return QuotesViewModel(quoteRepository) as T
+        return FakeQuotesViewModel(fakeQuoteRepository) as T
     }
 }

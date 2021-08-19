@@ -4,8 +4,12 @@
     <item
         android:id="@+id/quoteFragment"
         android:icon="@android:drawable/bottom_bar"
-        android:title="Intro" />
+        android:title="Quote" />
 
+    <item
+        android:id="@+id/quoteKodeinFragment"
+        android:icon="@android:drawable/bottom_bar"
+        android:title="Quote_In" />
     <item
         android:id="@+id/secondFragment"
         android:icon="@android:drawable/bottom_bar"

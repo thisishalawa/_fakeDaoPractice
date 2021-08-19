@@ -2,7 +2,7 @@ package master.fake.fake.dao_practice.quote.ui
 
 import androidx.lifecycle.ViewModel
 import master.fake.fake.dao_practice.quote.data.Quote
-import master.fake.fake.dao_practice.quote.repository.QuoteRepository
+import master.fake.fake.dao_practice.quote.repository.FakeQuoteRepository
 
 /*
 *Getting closer to user interface
@@ -18,10 +18,10 @@ You have done quite a bit of work already. Now it’s time to connect what you c
 
 // QuoteRepository dependency will again be passed in the
 // constructor using dependency injection
-class QuotesViewModel(private val quoteRepository: QuoteRepository)
+class FakeQuotesViewModel(private val fakeQuoteRepository: FakeQuoteRepository)
     : ViewModel() {
 
-    fun getQuotes() = quoteRepository.getQuotes()
+    fun getQuotes() = fakeQuoteRepository.getQuotes()
 
-    fun addQuote(quote: Quote) = quoteRepository.addQuote(quote)
+    fun addQuote(quote: Quote) = fakeQuoteRepository.addQuote(quote)
 }

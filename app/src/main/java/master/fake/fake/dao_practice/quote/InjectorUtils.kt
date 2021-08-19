@@ -1,8 +1,8 @@
 package master.fake.fake.dao_practice.quote
 
-import master.fake.fake.dao_practice.quote.data.FakeDatabase
-import master.fake.fake.dao_practice.quote.repository.QuoteRepository
-import master.fake.fake.dao_practice.quote.ui.QuotesViewModelFactory
+import master.fake.fake.dao_practice.quote.data.FakeQuoteDatabase
+import master.fake.fake.dao_practice.quote.repository.FakeQuoteRepository
+import master.fake.fake.dao_practice.quote.ui.FakeQuotesViewModelFactory
 
 
 /*
@@ -32,14 +32,14 @@ This is a simple but at the same time effective form of dependency injection.
 object InjectorUtils {
 
     // This will be called from QuotesActivity
-    fun provideQuotesViewModelFactory(): QuotesViewModelFactory {
+    fun provideQuotesViewModelFactory(): FakeQuotesViewModelFactory {
 
 
 
         // ViewModelFactory needs a repository, which in turn needs a DAO from a database
         // The whole dependency tree is constructed right here, in one place
-        val quoteRepository = QuoteRepository.getInstance(FakeDatabase.getInstance().quoteDao)
-        return QuotesViewModelFactory(quoteRepository)
+        val quoteRepository = FakeQuoteRepository.getInstance(FakeQuoteDatabase.getInstance().quoteDao)
+        return FakeQuotesViewModelFactory(quoteRepository)
 
 
     }

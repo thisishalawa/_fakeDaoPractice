@@ -42,7 +42,7 @@ class QuoteFragment : Fragment() {
         val factory = InjectorUtils.provideQuotesViewModelFactory()
 
         val viewModel = ViewModelProvider(this, factory).get(
-            QuotesViewModel::class.java
+            FakeQuotesViewModel::class.java
         )
 
         // Observing LiveData from the QuotesViewModel which in turn observes

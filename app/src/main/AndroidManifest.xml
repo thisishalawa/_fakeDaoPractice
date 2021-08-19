@@ -4,25 +4,24 @@
     package="master.fake.fake">
 
     <application
+        android:name=".dao_practice.quote_kodein_in.QuotesApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:windowSoftInputMode="adjustResize"
         android:theme="@style/Theme.ProjectSetup"
+        android:windowSoftInputMode="adjustResize"
         tools:ignore="AllowBackup">
 
         <activity
             android:name="master.fake.fake.MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"
-            >
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
 
     </application>

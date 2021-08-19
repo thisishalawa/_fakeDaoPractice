@@ -14,4 +14,8 @@
         android:id="@+id/secondFragment"
         android:name="master.fake.fake.dao_practice.second.SecondFragment"
         android:label="SecondFragment" />
+    <fragment
+        android:id="@+id/quoteKodeinFragment"
+        android:name="master.fake.fake.dao_practice.quote_kodein_in.QuoteKodeinFragment"
+        android:label="QuoteKodeinFragment" />
 </navigation>

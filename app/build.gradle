@@ -73,6 +73,11 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
 
+    // Kodein
+    def kodein_version = "6.4.0"
+    implementation "org.kodein.di:kodein-di-generic-jvm:$kodein_version"
+    implementation "org.kodein.di:kodein-di-framework-android-x:$kodein_version"
+
 /*
     // Navigation
     def navigation_version = "1.0.0"
